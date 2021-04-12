@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "348145157207",
+    "project_id": "eatapp-c7893",
+    "storage_bucket": "eatapp-c7893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348145157207:android:556532e330c55e57150f12",
+        "android_client_info": {
+          "package_name": "com.maksymb.geteat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348145157207-8rs99m5hmv8cjl9t5vd0e6i5gdl91udl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maksymb.geteat",
+            "certificate_hash": "afe603d0cdbd1c7a04e902ebc4714618a866ffda"
+          }
+        },
+        {
+          "client_id": "348145157207-cf0ijgao30u3t6203us84nannqq23g6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKz40XzJofnpZsBwgpjhdocozoomOXMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348145157207-cf0ijgao30u3t6203us84nannqq23g6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
