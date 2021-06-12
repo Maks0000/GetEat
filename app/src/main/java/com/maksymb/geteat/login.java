@@ -1,33 +1,24 @@
 
 package com.maksymb.geteat;
 
-        import androidx.annotation.NonNull;
-        import androidx.appcompat.app.AlertDialog;
-        import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
-        import android.content.DialogInterface;
-        import android.content.Intent;
-        import android.os.Bundle;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
-        import android.text.TextUtils;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.RelativeLayout;
-
-        import com.google.android.gms.tasks.OnFailureListener;
-        import com.google.android.gms.tasks.OnSuccessListener;
-        import com.google.android.material.snackbar.Snackbar;
-        import com.google.firebase.auth.AuthResult;
-        import com.google.firebase.auth.FirebaseAuth;
-        import com.google.firebase.database.DatabaseReference;
-        import com.google.firebase.database.FirebaseDatabase;
-        import com.rengwuxian.materialedittext.MaterialEditText;
-
-
-
-        import models.User;
+import models.User;
 
 
 
@@ -63,8 +54,8 @@ public class login extends AppCompatActivity {
 
      private void showSignInWindow(){
          AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-         dialog.setTitle("Log in");
-         dialog.setMessage("Write all");
+         dialog.setTitle("Sign in");
+
 
          LayoutInflater inflater = LayoutInflater.from(this);
          View sign_in_window = inflater.inflate(R.layout.sign_in_window, null);
@@ -106,11 +97,14 @@ public class login extends AppCompatActivity {
 
 
 
+
+
+
+
         private void showRegisterWindow() {
 
             AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-            dialog.setTitle("Please register!");
-            dialog.setMessage("Write all");
+            dialog.setTitle("Sign up");
 
             LayoutInflater inflater = LayoutInflater.from(this);
             View regWindow = inflater.inflate(R.layout.register_window, null);

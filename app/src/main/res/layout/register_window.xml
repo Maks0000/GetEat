@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     app:cardElevation="10dp">
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -70,6 +69,4 @@
             app:met_errorColor="#ddaa00"
             app:met_singleLineEllipsis="true"/>
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>

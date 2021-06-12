@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/bg"
     android:id="@+id/root_element"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
@@ -15,7 +15,6 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,18 +24,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="35sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:fontFamily="@font/montserrat"
-            android:text="Register  app"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
     </LinearLayout>
-
     <TextView
         android:id="@+id/text_bottom"
         android:layout_width="wrap_content"
@@ -49,7 +37,6 @@
         android:textAlignment="center"
         android:textColor="@color/text_bottom"
         android:textSize="12sp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:weightSum="2"
@@ -60,7 +47,6 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/btn_sign"
             android:layout_width="wrap_content"
@@ -71,7 +57,6 @@
             android:fontFamily="@font/montserrat"
             android:text="Sign in"
             android:textColor="@android:color/white" />
-
         <Button
             android:id="@+id/btn_reg"
             android:layout_width="wrap_content"
@@ -80,7 +65,7 @@
             android:layout_weight="1"
             android:background="@drawable/btn_reg"
             android:fontFamily="@font/montserrat"
-            android:text="register"
+            android:text="sign up"
             android:textColor="@android:color/white" />
     </LinearLayout>
 

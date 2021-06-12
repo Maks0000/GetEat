@@ -47,13 +47,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
         private void setFoodItem(int pos){
+
             List<FoodItem> foodItems = new ArrayList<>();
         switch (pos) {
             case 2:
-                FoodItem foodItem1 = new FoodItem("Sprite 0,5l",14,R.drawable.sprite);
-                FoodItem foodItem2 = new FoodItem("Cola zero 0,5l",14,R.drawable.colazero);
-                FoodItem foodItem3 = new FoodItem("Juice 0,5l",14,R.drawable.juice);
-                FoodItem foodItem4 = new FoodItem("Water 5l",14,R.drawable.water5);
+                FoodItem foodItem1 = new FoodItem("Sprite 0,5l",2,R.drawable.sprite);
+                FoodItem foodItem2 = new FoodItem("Cola zero 0,5l",2,R.drawable.colazero);
+                FoodItem foodItem3 = new FoodItem("Juice 0,5l",3,R.drawable.juice);
+                FoodItem foodItem4 = new FoodItem("Water 5l",4,R.drawable.water5);
 
                 foodItems.add(foodItem1);
                 foodItems.add(foodItem2);
@@ -61,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 foodItems.add(foodItem4);
                 break;
             case 1:
-                FoodItem foodItem5 = new FoodItem("meat",14,R.drawable.meat0);
-                FoodItem foodItem6 = new FoodItem("chicken",14,R.drawable.chiken);
+                FoodItem foodItem5 = new FoodItem("meat",5,R.drawable.meat0);
+                FoodItem foodItem6 = new FoodItem("chicken",3,R.drawable.chiken);
                 FoodItem foodItem7 = new FoodItem("fish",14,R.drawable.fish);
                 FoodItem foodItem8 = new FoodItem("grilled chicken leg",14,R.drawable.grilledchickenleg);
 
@@ -72,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
                 foodItems.add(foodItem8);
                 break;
             case 0:
-                FoodItem foodItem9 = new FoodItem("Carrot",14,R.drawable.carrot);
-                FoodItem foodItem10 = new FoodItem("Cucumber",14,R.drawable.cucumber);
-                FoodItem foodItem11 = new FoodItem("Tomatoes",14,R.drawable.pomidor);
-                FoodItem foodItem12 = new FoodItem("Potato",14,R.drawable.potato);
+                FoodItem foodItem9 = new FoodItem("Carrot",2,R.drawable.carrot);
+                FoodItem foodItem10 = new FoodItem("Cucumber",3,R.drawable.cucumber);
+                FoodItem foodItem11 = new FoodItem("Tomatoes",  1,R.drawable.pomidor);
+                FoodItem foodItem12 = new FoodItem("Potato",2,R.drawable.potato);
 
                 foodItems.add(foodItem9);
                 foodItems.add(foodItem10);
@@ -90,7 +91,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerItems.setAdapter(foodAdapter);
 
 
+
         }
+
+
 
 }
 

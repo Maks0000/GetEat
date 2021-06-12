@@ -1,5 +1,6 @@
 package com.maksymb.geteat;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,11 +32,12 @@ public class FoodAdapter  extends RecyclerView.Adapter<FoodAdapter.FoodHolder>{
         return new FoodHolder(view);
     }
 
+    @SuppressLint("DefaultLocale")
     @Override
     public void onBindViewHolder(@NonNull FoodHolder holder, int position) {
-        holder.price.setText(String.format("$%d",data.get(position).getPrice()));
         holder.image.setImageResource(data.get(position).getImage());
         holder.title.setText(data.get(position).getName());
+        holder.price.setText(String.format("$%d",data.get(position).getPrice()));
 
         if(selectedItem == position){
             holder.cardView.animate().scaleX(1.1f);
@@ -50,8 +52,7 @@ public class FoodAdapter  extends RecyclerView.Adapter<FoodAdapter.FoodHolder>{
             holder.price.setTextColor(Color.BLACK);
             holder.llBackground.setBackgroundResource(R.color.white);
             }
-
-        }
+    }
 
 
 
@@ -66,7 +67,7 @@ public class FoodAdapter  extends RecyclerView.Adapter<FoodAdapter.FoodHolder>{
         TextView price;
         LinearLayout llBackground;
         CardView cardView;
-        public FoodHolder(View holder){
+        public FoodHolder(View holder) {
             super(holder);
             title = holder.findViewById(R.id.food_title);
             image = holder.findViewById(R.id.food_img);

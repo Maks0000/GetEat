@@ -53,15 +53,23 @@ public class FoodCategoriesAd  extends RecyclerView.Adapter<FoodCategoriesAd.Cat
         holder.title.setText(data.get(position).getName());
         if (position == selectedItem){
             //make card selected
-            holder.cardView.setOutlineSpotShadowColor(context.getColor(R.color.green));
-            holder.cardView.setOutlineAmbientShadowColor(context.getColor(R.color.green));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                holder.cardView.setOutlineSpotShadowColor(context.getColor(R.color.green));
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                holder.cardView.setOutlineAmbientShadowColor(context.getColor(R.color.green));
+            }
             holder.cardView.setStrokeWidth(2);
             holder.title.setTextColor(context.getColor(R.color.green));
             holder.image.setColorFilter(ContextCompat.getColor(context,R.color.green), PorterDuff.Mode.SRC_IN);
         }else {
             // make card inactive
-            holder.cardView.setOutlineSpotShadowColor(context.getColor(R.color.gray));
-            holder.cardView.setOutlineAmbientShadowColor(context.getColor(R.color.gray));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                holder.cardView.setOutlineSpotShadowColor(context.getColor(R.color.gray));
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                holder.cardView.setOutlineAmbientShadowColor(context.getColor(R.color.gray));
+            }
             holder.title.setTextColor(context.getColor(R.color.gray));
             holder.image.setColorFilter(ContextCompat.getColor(context,R.color.gray), PorterDuff.Mode.SRC_IN);
             holder.cardView.setStrokeWidth(2);
